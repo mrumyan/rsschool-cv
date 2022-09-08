@@ -32,3 +32,17 @@ From that moment on, I've started immersing in frontend development. I've starte
 * Bugfix
 * Sanity testing
 * Mentoring of newcomers
+
+### Education
+#### Master's Degree, Lobachevsky State University of Nizhny Novgorod
+Computer science, 2013 - 2019
+
+### Cources
+RS School Course «JavaScript/Front-end. Stage 1» (in progress)  
+Responsive Web Design on FreeCodeCamp (in progress)  
+[HTMLAcademy](https://htmlacademy.ru/profile/id2192863)  
+
+### Languages
+**English:** B1  
+**German:** A1  
+**Russian:** Native  
