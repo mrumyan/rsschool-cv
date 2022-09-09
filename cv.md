@@ -24,6 +24,12 @@ From that moment on, I've started immersing in frontend development. I've starte
 * Jira
 * Agile, Scrum
 
+### Code example
+```
+function multiply(a, b) {
+  return a * b;
+}
+```
 ### Work experience
 #### Java developer, Orion Innovation (03.2016 - 06.2022)  
 * Maintenance of software
