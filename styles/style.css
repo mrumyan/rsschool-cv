@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 300;
     src: local(''),
-        url('assets/fonts/lato-v23-latin-300.woff2') format('woff2'),
-        url('assets/fonts/lato-v23-latin-300.woff') format('woff');
+        url('../assets/fonts/lato-v23-latin-300.woff2') format('woff2'),
+        url('../assets/fonts/lato-v23-latin-300.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('assets/fonts/lato-v23-latin-regular.woff2') format('woff2'),
-        url('assets/fonts/lato-v23-latin-regular.woff') format('woff');
+        url('../assets/fonts/lato-v23-latin-regular.woff2') format('woff2'),
+        url('../assets/fonts/lato-v23-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -21,8 +21,8 @@
     font-style: normal;
     font-weight: 900;
     src: local(''),
-        url('assets/fonts/lato-v23-latin-900.woff2') format('woff2'),
-        url('assets/fonts/lato-v23-latin-900.woff') format('woff');
+        url('../assets/fonts/lato-v23-latin-900.woff2') format('woff2'),
+        url('../assets/fonts/lato-v23-latin-900.woff') format('woff');
 }
 
 @font-face {
@@ -30,8 +30,8 @@
     font-style: normal;
     font-weight: 300;
     src: local(''),
-        url('assets/fonts/spectral-v13-latin-300.woff2') format('woff2'),
-        url('assets/fonts/spectral-v13-latin-300.woff') format('woff');
+        url('../assets/fonts/spectral-v13-latin-300.woff2') format('woff2'),
+        url('../assets/fonts/spectral-v13-latin-300.woff') format('woff');
 }
 
 @font-face {
@@ -39,8 +39,8 @@
     font-style: normal;
     font-weight: 500;
     src: local(''),
-        url('assets/fonts/spectral-v13-latin-500.woff2') format('woff2'),
-        url('assets/fonts/spectral-v13-latin-500.woff') format('woff');
+        url('../assets/fonts/spectral-v13-latin-500.woff2') format('woff2'),
+        url('../assets/fonts/spectral-v13-latin-500.woff') format('woff');
 }
 
 @font-face {
@@ -48,8 +48,8 @@
     font-style: italic;
     font-weight: 500;
     src: local(''),
-        url('assets/fonts/spectral-v13-latin-500italic.woff2') format('woff2'),
-        url('assets/fonts/spectral-v13-latin-500italic.woff') format('woff');
+        url('../assets/fonts/spectral-v13-latin-500italic.woff2') format('woff2'),
+        url('../assets/fonts/spectral-v13-latin-500italic.woff') format('woff');
 }
 
 * {
@@ -58,6 +58,7 @@
 
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -66,10 +67,324 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     font-family: 'Lato', Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.4rem;
     color: #242424;
+}
+
+/***FONTS***/
+h1 {
+    margin: 0;
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4.6rem;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #DB9291;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.03rem;
+    color: #2D3E5B;
+}
+
+.body-light-font {
+    margin: 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #242424;
+}
+
+.body-font {
+    margin: 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #242424;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1440px;
+    min-height: 50px;
+}
+
+/***HEADER***/
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation__list-link {
+    text-decoration: none;
+}
+
+/***MAIN***/
+.main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/***PROFILE***/
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.profile__logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 50px;
+}
+
+.profile__title {
+    margin: 0;
+    letter-spacing: -0.05rem;
+    color: #2D3E5B;
+}
+
+/***CONTACTS***/
+.contacts {
+    margin-top: 16px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+    list-style: none;
+    margin: 0;
+}
+
+.contacts__item {
+    position: relative;
+    margin: 10px 50px 10px 0;
+}
+
+.contacts__item a {
+    text-decoration: none;
+    color: #242424;
+}
+
+.contacts__item-icon:before,
+.experience__item-icon::before,
+.education__item::before,
+.courses__course-name-icon::before,
+.courses__period-icon::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts__item-icon:nth-child(1)::before {
+    background-image: url(../assets/icons/location.svg);
+}
+
+.contacts__item-icon:nth-child(2)::before {
+    background-image: url(../assets/icons/mail.svg);
+}
+
+.contacts__item-icon:nth-child(3)::before {
+    background-image: url(../assets/icons/telegram.svg);
+}
+
+.contacts__item-icon:nth-child(4)::before {
+    background-image: url(../assets/icons/instagram.svg);
+}
+
+.contacts__item-icon:nth-child(5)::before {
+    background-image: url(../assets/icons/github.svg);
+}
+
+/***SUMMARY***/
+.summary {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: #F7F8F8;
+}
+
+.summary_about-me {
+    margin: 16px 0;
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 130%;
+    letter-spacing: -0.05rem;
+    color: #242424;
+}
+
+/***EXPERIENCE***/
+.experience {
+    margin-bottom: 24px;
+}
+
+.experience__title,
+.skills__title,
+.education__title,
+.education_grade,
+.courses__title,
+.courses__subtitle {
+    margin-bottom: 16px;
+}
+
+.experience__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.experience__item {
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 12px;
+}
+
+.experience__item-icon:nth-of-type(1)::before {
+    background-image: url(../assets/icons/company.svg);
+}
+
+.experience__item-icon:nth-of-type(2)::before {
+    background-image: url(../assets/icons/calendar.svg);
+}
+
+/***SKILLS***/
+.skills {
+    margin-bottom: 24px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__item {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.skills-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/***EDUCATION***/
+.education {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.education_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.education__item {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.education__item:nth-of-type(1) {
+    margin-right: 50px;
+}
+
+.education__item-icon:nth-of-type(1)::before,
+.courses__course-name-icon::before {
+    background-image: url(../assets/icons/book.svg);
+}
+
+.education__item-icon:nth-of-type(2)::before,
+.courses__period-icon::before {
+    background-image: url(../assets/icons/calendar.svg);
+}
+
+/***COURSES***/
+.courses__list {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.courses__course-name,
+.courses__period {
+    position: relative;
+}
+
+.courses__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 16px;
+}
+
+/***FOOTER***/
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+    list-style: none;
 }
