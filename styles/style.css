@@ -51,3 +51,25 @@
         url('assets/fonts/spectral-v13-latin-500italic.woff2') format('woff2'),
         url('assets/fonts/spectral-v13-latin-500italic.woff') format('woff');
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.4rem;
+    color: #242424;
+}
