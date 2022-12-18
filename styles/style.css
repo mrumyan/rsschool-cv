@@ -158,7 +158,6 @@ h4 {
     justify-content: space-between;
 }
 
-
 /***PROFILE***/
 .profile {
     display: flex;
@@ -284,7 +283,8 @@ h4 {
 .courses__title,
 .courses__subtitle,
 .code__title,
-.code__subtitle {
+.code__subtitle,
+.projects__title {
     margin-bottom: 16px;
 }
 
@@ -385,6 +385,28 @@ h4 {
     align-items: center;
     padding-left: 30px;
     margin-bottom: 16px;
+}
+
+/***PROJECTS***/
+.projects {
+    margin-bottom: 40px;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+}
+
+.projects__image {
+    width: 250px;
+    height: 200px;
+}
+
+.projects__description {
+    text-align: center;
 }
 
 /***CODE***/
