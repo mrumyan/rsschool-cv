@@ -138,6 +138,27 @@ h4 {
     min-height: 50px;
 }
 
+.navigation__list-link,
+.footer-info_link {
+    position: relative;
+}
+
+.navigation__list-link::before,
+.footer-info_link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background: #2D3E5B;
+    transition: width 0.5s;
+}
+
+.navigation__list-link:hover:before,
+.footer-info_link:hover:before {
+    width: 100%;
+}
+
 /***HEADER***/
 .navigation__list {
     display: flex;
@@ -431,6 +452,7 @@ h4 {
     list-style: none;
 }
 
-.footer-info_link {
+.footer-info_link,
+.footer-info_link-school {
     text-decoration: none;
 }
