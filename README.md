@@ -1,3 +1,3 @@
-# rsschool-cv  
-[markdown][https://mrumyan.github.io/rsschool-cv/cv]  
-[original][https://mrumyan.github.io/rsschool-cv/]  
+# RS School CV task  
+[open markdown](https://mrumyan.github.io/rsschool-cv/cv)  
+[open original page](https://mrumyan.github.io/rsschool-cv/)  
