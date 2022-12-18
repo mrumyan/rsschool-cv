@@ -86,12 +86,11 @@ h1 {
     line-height: 4.6rem;
 }
 
-h3 {
+h2 {
     margin: 0;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
-    /* font-size: 1rem; */
     font-size: 1.2rem;
     line-height: 1.2rem;
     letter-spacing: 0.15rem;
@@ -99,7 +98,7 @@ h3 {
     color: #DB9291;
 }
 
-h4 {
+h3 {
     margin: 0;
     font-family: 'Spectral';
     font-style: italic;
@@ -340,6 +339,9 @@ h4 {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .skills__item {
