@@ -246,11 +246,11 @@
                     <pre class="content_solution">
                         <code class="content_solution-code">
 function rgb(r, g, b) {
-    let getValidValue = value => value = value > 255 ? 255 : value &lt; 0 ? 0 : value;
-    let convertToHex = dec => getValidValue(dec).toString(16).toUpperCase();
-    let getValidRepresentation = str => str.length &lt; 2 ? `0${str}` : str;
-    let getResult = res => getValidRepresentation(convertToHex(res));
-                        
+    let getValidValue = value =&gt value = value &gt 255 ? 255 : value &lt; 0 ? 0 : value;
+    let convertToHex = dec =&gt getValidValue(dec).toString(16).toUpperCase();
+    let getValidRepresentation = str =&gt str.length &lt; 2 ? `0${str}` : str;
+    let getResult = res =&gt getValidRepresentation(convertToHex(res));
+
     return `${getResult(r)}${getResult(g)}${getResult(b)}`;
 }</code>
                 </pre>
